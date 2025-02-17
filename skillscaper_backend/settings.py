@@ -29,11 +29,10 @@ DEBUG = True
 ALLOWED_HOSTS = ["skillscapper-backend-1.onrender.com", "127.0.0.1"]
 
 
-# Application definition
-
+ 
 CSRF_TRUSTED_ORIGINS = [
-    "https://skillscapper-backend-1.onrender.com",  # Your backend
-    "https://your-flutter-app.web.app",  # Your frontend
+    "https://skillscapper-backend-1.onrender.com",  
+    "https://skillscaper-app.web.app/",   
 ]
 INSTALLED_APPS = [
     'rest_framework',
@@ -62,6 +61,11 @@ MIDDLEWARE = [
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:57193",   
 ]
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
+
+
 CORS_ALLOW_ALL_ORIGINS = True  
 CORS_ALLOW_CREDENTIALS = True
 
