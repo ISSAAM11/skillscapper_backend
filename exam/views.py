@@ -28,10 +28,10 @@ class RetreveTestRequest(generics.ListAPIView):
     queryset = TestRequest.objects.all()
     permission_classes = [IsAuthenticated]
     serializer_class = TestRequestSerializer
-    lookup_field = "id_user"  
+    lookup_field = "id"  
 
     def get_queryset(self):
-        user_id = self.kwargs.get("id_user")  
+        user_id = self.kwargs.get("id")  
         return TestRequest.objects.filter(id_user=user_id)
 
 

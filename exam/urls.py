@@ -7,7 +7,7 @@ urlpatterns = [
     path('questions/', QuestionViewSet.as_view(), name="questions"),
 
 
-    path('test_request/<int:id_user>/', RetreveTestRequest.as_view(), name="test_request"),
+    path('test_request/<int:id>/', RetreveTestRequest.as_view(), name="test_request"),
     path('test_request/<int:pk>/update/', UpdateTestRequest.as_view(), name='test_request_update'),
 
 ]
