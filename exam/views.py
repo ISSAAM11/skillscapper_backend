@@ -6,12 +6,7 @@ from .serializers import ExamSerializer, QuestionSerializer, TestRequestSerializ
 from rest_framework import generics
 from rest_framework.permissions import IsAuthenticated
 
-
-class QuestionViewSet(generics.GenericAPIView):
-    queryset = Question.objects.all()
-    serializer_class = QuestionSerializer
-    permission_classes = [IsAuthenticated]
-
+ 
 
  
 class RetreveExam(generics.RetrieveAPIView):

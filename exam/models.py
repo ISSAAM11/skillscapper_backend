@@ -47,7 +47,6 @@ class TestRequest(models.Model):
     is_completed = models.BooleanField(default=False)   
     time_limit = models.DateField(null=True, blank=True)
     total_score = models.IntegerField(default=0)
-    # questions = models.ManyToManyField(Question, related_name='exams')
-
+ 
     def __str__(self):
         return f"Exam ID: {self.id}, exam_id: {self.time_limit}"

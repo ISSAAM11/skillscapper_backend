@@ -31,12 +31,15 @@ ALLOWED_HOSTS = ["skillscapper-backend-1.onrender.com", "127.0.0.1"]
 
 # Application definition
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://skillscapper-backend-1.onrender.com",  # Your backend
+    "https://your-flutter-app.web.app",  # Your frontend
+]
 INSTALLED_APPS = [
     'rest_framework',
     'rest_framework_simplejwt',
     'exam',
     "corsheaders", 
-    "test_request",
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
