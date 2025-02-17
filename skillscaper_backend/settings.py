@@ -34,6 +34,9 @@ CSRF_TRUSTED_ORIGINS = [
     "https://skillscapper-backend-1.onrender.com",  
     "https://skillscaper-app.web.app/",   
 ]
+
+CSRF_COOKIE_SECURE = False
+
 INSTALLED_APPS = [
     'rest_framework',
     'rest_framework_simplejwt',
