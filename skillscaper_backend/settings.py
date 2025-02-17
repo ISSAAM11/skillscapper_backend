@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-2a&-)%!+p5mu%%c$@p1(5y^bq1pn8jnlepgd9m^7#e6&_q(yb1
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["skillscapper-backend.onrender.com", "127.0.0.1"]
 
 
 # Application definition
