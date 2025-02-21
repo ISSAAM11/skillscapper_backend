@@ -7,8 +7,6 @@ from rest_framework import generics
 from rest_framework.permissions import IsAuthenticated
 
  
-
- 
 class RetreveExam(generics.RetrieveAPIView):
     queryset = Exam.objects.all()
     permission_classes = [IsAuthenticated]
@@ -16,9 +14,6 @@ class RetreveExam(generics.RetrieveAPIView):
     lookup_field = "pk"
 
  
-
-
-
 class RetreveTestRequest(generics.ListAPIView):
     queryset = TestRequest.objects.all()
     permission_classes = [IsAuthenticated]
